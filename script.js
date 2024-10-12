@@ -40,7 +40,7 @@ console.log(typeof country);
 console.log(typeof language);
 
 // let,const and var
-let language = 'kinyarwanda';
+let language = 'Kinyarwanda';
 const country = "Rwanda";
 const continent = 'africa';
 const isIsland = false;
@@ -170,11 +170,11 @@ if (age >= 18) {
 const birthYear = 1998;
 let century;
 if (birthYear <= 2000) {
-    let century = 20;
+     century = 20;
 } else {
-    let century = 21;
+    century = 21;
 }
-console.log(century);
+console.log(century);//20
 
 //code challenge2
 const massMark = 78;
@@ -204,7 +204,7 @@ ${BMIJohn})!`)
 
 let population = 14;
 if (population > 33) {
-    console.log(`${Rwanda}'s population is above average`);
+    console.log(`${Rwanda}'s population is above average);
 } else {
     console.log(
         `${Rwanda}'s population is ${22} million below average`,
@@ -212,7 +212,7 @@ if (population > 33) {
 }
 //Type conversion 
 const inputYear = '1991';
-console.log(Number(inputYear), inputYear);// 1991 ,"1991" to onvert string into number
+console.log(Number(inputYear), inputYear);// 1991 ,"1991" to convert string into number
 console.log(inputYear + 18);//199118
 console.log(Number(inputYear) + 18);//2009
 
@@ -242,7 +242,7 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);//1143
 //falsy values and truthy values
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('claude'));
+console.log(Boolean('Claude));
 console.log(Boolean({}));
 console.log(Boolean(''));
 
@@ -257,7 +257,7 @@ const money = 100;//truthy values
 if (money) {
     console.log("don't spend it all;)");// don't spend it all;)
 } else {
-    console.log('you shoud get a job !');
+    console.log('you should get a job !');
 }
 
 
@@ -319,7 +319,7 @@ if (numNeighbours == 1) {
     console.log('No borders')
 }
 
-// basicboolean logic:the and, or & not operators
+// basic boolean logic: the and, or & not operators
 
 if (language === 'english' && people < 50 && isIsland === false) {
     console.log('you should live in ${country} :) ')
@@ -382,22 +382,22 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 const day = 'monday';
 
 switch (day) {
-    case 'monday':
+    case 'Monday':
         console.log('plan course structure');
         console.log('Go to coding meetup');
         break;
-    case 'tuesday':
+    case 'Tuesday':
         console.log('prepare theory videos');
         break;
-    case 'wednesday':
-    case 'thurday':
+    case 'Wednesday':
+    case 'Thursday':
         console.log('write code examples');
         break;
-    case 'friday':
+    case 'Friday':
         console.log('record videos');
         break;
-    case 'sturaday':
-    case 'sunday':
+    case 'Saturday':
+    case 'Sunday':
         console.log('enjoy the weekend :D')
         break;
     default:
@@ -433,10 +433,10 @@ console.log(`I'm ${2037 - 1991} years old ${me}`)// I'm 47 years old Jonas
 
 //The conditional(ternary) operator
 const age = 23;
-age >= 18 ? console.log('i like to drinkwine ⛽ ') :
-    console.log('i like to drink water');//i like to drink water
+age >= 18? console.log('i like to drink wine ⛽ ') :
+    console.log('i like to drink water);//i like to drink water
 
-const drink = age >= 18 ? 'wine' : 'water';
+const drink = age >= 18 ? 'wine': 'water';
 console.log(drink);// wine
 
 //or
@@ -458,7 +458,7 @@ const tip = bill <= 300 && bill >= 50 ? bill * 0.15 :
     bill * 0.2;
 console.log(`the bill was ${bill}, the tip was ${tip}
     ,and the total value ${bill + tip}`);
-//the bill was 275, the tip was 41.25, and the total value 316.25
+//the bill was 275, the tip was 41.25, and the total value was 316.25
 
 
 
@@ -470,20 +470,20 @@ let hasDrivesLicence = false;
 const passTest = true;
 
 if (passTest) hasDrivesLicence = true;
-if (hasDrivesLicence) cosole.log('i can drive :D');// i can drive :D
+if (hasDrivesLicence) console.log('i can drive :D');// i can drive :D
 
 // functions
 
 function logger() {
     console.log('My name is Jonas');
 }
-// calling / running / invoking function
+//calling/running/invoking function
 
 logger(); // My name is Jonas
 logger(); // My name is Jonas
 logger(); // My name is Jonas
 
-function fruitProcessor(apples, oranges) {
+function fruit processor(apples, oranges) {
     console.log(apples, oranges);
     const juice = `Juice with ${apples} apples and
      ${oranges} oranges.`;
